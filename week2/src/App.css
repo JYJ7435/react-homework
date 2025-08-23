@@ -1,0 +1,26 @@
+body {
+  background-color: var(--color-surface);
+}
+
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+
+  h1 {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-3xl);
+  }
+
+  h2 {
+    color: var(--color-text-primary);
+  }
+}
+
+.container {
+  margin-block: 1.875rem;
+  display: flex;
+  gap: 20px;
+}

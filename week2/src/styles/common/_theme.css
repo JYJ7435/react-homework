@@ -1,0 +1,66 @@
+:root {
+  /* Backgrounds */
+  --color-bg: #111214;
+  --color-surface: #16171a;
+  --color-elevated: #1b1d20;
+
+  /* Borders */
+  --color-border: #26282c;
+
+  /* Text */
+  --color-text-primary: #f4f5f8;
+  --color-text-secondary: #c6c8cc;
+  --color-text-muted: #9ca0a6;
+  --color-text-inverse: #222326;
+
+  /* Neutrals */
+  --color-neutral-0: #0e0f11;
+  --color-neutral-50: #16171a;
+  --color-neutral-100: #1b1d20;
+  --color-neutral-200: #26282c;
+  --color-neutral-300: #31343a;
+  --color-neutral-400: #3d4148;
+  --color-neutral-500: #4a4f57;
+  --color-neutral-600: #5b616b;
+  --color-neutral-700: #767d89;
+  --color-neutral-800: #a3a8b1;
+  --color-neutral-900: #d6d9de;
+
+  /* States */
+  --color-success: #299e73;
+  --color-success-hover: #36b180;
+  --color-success-active: #24835f;
+  --color-danger: #f9004d;
+  --color-danger-hover: #ff1a65;
+  --color-danger-active: #d30042;
+
+  /* Misc */
+  --color-focus: #000;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-md: 0.875rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  /* Space */
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-ms: 1.125rem;
+  --space-md: 1.375rem;
+  --space-ml: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 3.5rem;
+  --space-3xl: 4rem;
+
+  /* Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 624.9375rem;
+}

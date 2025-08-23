@@ -1,0 +1,9 @@
+.form-group {
+  background-color: #fff;
+  padding: 1.5rem 1.5rem 4rem 1.5rem;
+  border-radius: 0.5rem;
+  opacity: 1;
+  position: relative;
+  inline-size: 100%;
+  max-inline-size: 21.625rem;
+}

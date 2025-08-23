@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/.DS_Store": false,
+    "**/Thumbs.db": false,
+    "**/node_modules": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "formattingToggle.statusBarText": {
+    "formattingEnabled": "On $(verified-filled)",
+    "formattingDisabled": "Off $(verified)"
+  },
+  "explorerExclude.backup": {}
+}
