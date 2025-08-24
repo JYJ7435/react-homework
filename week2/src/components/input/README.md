@@ -18,11 +18,13 @@ import Input from '../input/input';
 
 ## 속성(props)
 
-| 속성명      | 타입    | 기본값 | 설명              |
-| ----------- | ------- | ------ | ----------------- |
-| id          | string  |        | Input ID          |
-| className   | string  | ''     | Input 클래스 이름 |
-| placeholder | string  | ''     | Input 텍스트      |
-| label       | string  | ''     | Input label       |
-| type        | string  | text   | Input 타입        |
-| isRequired  | boolean | false  | 입력 필수 여부    |
+| 속성명          | 타입     | 기본값 | 설명                     |
+| --------------- | -------- | ------ | ------------------------ |
+| id              | string   |        | Input ID                 |
+| className       | string   | ''     | Input 클래스 이름        |
+| placeholder     | string   | ''     | Input 텍스트             |
+| label           | string   | ''     | Input label              |
+| type            | string   | text   | Input 타입               |
+| isRequired      | boolean  | false  | 입력 필수 여부           |
+| name            | string   | ''     | Input Name               |
+| onChangeHandler | function |        | Input ChangeEventHandler |

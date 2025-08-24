@@ -11,6 +11,8 @@ import './input.css';
  * @param {boolean} [props.isRequired] - 입력 필수 여부
  * @param {string} [props.label] - 인풋 라벨
  * @param {string} [props.placeholder] - 인풋 텍스트
+ * @param {string} [props.name] - 인풋 네임
+ * @param {React.ChangeEventHandler} [props.onChangeHandler] - 인풋 네임
  */
 
 function Input({
@@ -20,6 +22,8 @@ function Input({
   label = '',
   type = 'text',
   isRequired = false,
+  name,
+  onChangeHandler,
 }) {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -40,6 +44,8 @@ function Input({
         placeholder={placeholder}
         type={isPassword && isVisible ? 'text' : type}
         required={isRequired}
+        name={name}
+        onChange={onChangeHandler}
       />
       {isPassword && (
         <button

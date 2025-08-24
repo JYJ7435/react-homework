@@ -6,7 +6,7 @@
 
 - [Input Component](#input-component)
 - [Button Component](#button-component)
-- [From Component](#form-component)
+- [Form Component](#form-component)
 - [최종](#최종)
 - [2주차 회고](#2주차-회고)
 
@@ -26,6 +26,8 @@ import './input.css';
  * @param {boolean} [props.isRequired] - 입력 필수 여부
  * @param {string} [props.label] - 인풋 라벨
  * @param {string} [props.placeholder] - 인풋 텍스트
+ * @param {string} [props.name] - 인풋 네임
+ * @param {React.ChangeEventHandler} [props.onChangeHandler] - 인풋 네임
  */
 
 function Input({
@@ -35,6 +37,8 @@ function Input({
   label = '',
   type = 'text',
   isRequired = false,
+  name,
+  onChangeHandler,
 }) {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -55,6 +59,8 @@ function Input({
         placeholder={placeholder}
         type={isPassword && isVisible ? 'text' : type}
         required={isRequired}
+        name={name}
+        onChange={onChangeHandler}
       />
       {isPassword && (
         <button
@@ -73,7 +79,7 @@ export default Input;
 
 ### 분석
 
-- props로 id,className,placeholder,label,type,isRequired 등 전달
+- props로 id,className,placeholder,label,type,isRequired,name,onChangeHandler 등 전달
 - type이 password일 경우에만 아이콘 렌더링
 - useState Hook을 사용하여 비밀번호 숨김/보임 토글 및 타입 변경
 
@@ -125,47 +131,124 @@ export default Button;
 ## Form Component
 
 ```jsx
-import React from 'react';
-import './form.css';
-
 /**
  * Form 컴포넌트
  *
  * @param {Object} props
  * @param {React.ReactNode} props.children - React Node
  * @param {string} [props.className] - Form ClassName
+ * @param {React.FormEventHandler} [props.onSubmit] - Form ClassName
 
  */
 
-function Form({ className, children }) {
-  return <form className={`form-group ${className}`.trim()}>{children}</form>;
+function Form({ className, children, onSubmit }) {
+  return (
+    <form onSubmit={onSubmit} className={`form-group ${className}`.trim()}>
+      {children}
+    </form>
+  );
 }
-
-export default Form;
 ```
 
 ### 분석
 
-- props로 className, children(React Node) 전달
+- props로 className, children(React Node), onSubmit(FormEventHandler) 전달
 
 ## 최종
 
 ```jsx
-// 회원가입 컴포넌트
-function SignUp() {
+// App.jsx
+function App() {
+  // (?=.*[a-zA-Z]): 최소 1개의 영문 알파벳이 포함
+  // (?=.*[0-9]): 최소 1개의 숫자가 포함
+  // .{6,}: 최소 6자리 이상(특수문자도 허용)
+  const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$/;
+
   return (
-    <Form>
+    <section className="app">
+      <h1>리액트 2주차 과제</h1>
+      <div className="container">
+        <div>
+          <h2>로그인</h2>
+          <SignIn regex={passwordRegex} />
+        </div>
+        <div>
+          <h2>회원가입</h2>
+          <SignUp regex={passwordRegex} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/**
+ * SignUp 컴포넌트
+ *
+ * @param {Object} props
+ * @param {RegExp} props.regex - 인풋 ID
+ */
+
+function SignUp({ regex }) {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  });
+
+  const onChangeHandler = (e) => {
+    // name,value 구조분해 할당
+    const { name, value } = e.target;
+
+    setForm({
+      ...form, // 기존 form 객체 복사 (불변성 유지)
+      [name]: value, // name과 일치하는 key의 value값 덮어씀
+    });
+  };
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+
+    // name, password, confirmPassword 구조분해 할당
+    const { name, password, confirmPassword } = form;
+
+    // name 유효성 검사
+    if (name.trim().length < 2) {
+      alert('이름은 두 글자 이상 입력해 주세요');
+      return;
+    }
+
+    // 패스워드 유효성 검사
+    if (!regex.test(password) || !regex.test(confirmPassword)) {
+      alert('패스워드는 숫자,영문 조합으로 6자리 이상 입력해 주세요');
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      alert('패스워드 확인 해주세요.');
+      return;
+    }
+
+    alert('회원가입이 완료 되었습니다!!');
+  };
+
+  return (
+    <Form onSubmit={onSubmitHandler}>
       <Input
         id="form-name"
         placeholder="2글자 이상 입력"
         type="text"
         label="이름"
+        name="name"
+        onChangeHandler={onChangeHandler}
       />
       <Input
         id="form-email"
         placeholder="use@comany.io"
         type="email"
         label="이메일"
+        name="email"
+        onChangeHandler={onChangeHandler}
       />
       <Input
         id="form-password"
@@ -173,6 +256,8 @@ function SignUp() {
         type="password"
         label="패스워드"
         isRequired={true}
+        name="password"
+        onChangeHandler={onChangeHandler}
       />
       <Input
         id="form-confirm-password"
@@ -180,21 +265,57 @@ function SignUp() {
         type="password"
         label="패스워드 확인"
         isRequired={true}
+        name="confirmPassword"
+        onChangeHandler={onChangeHandler}
       />
       <Button type="submit" label="회원가입" />
     </Form>
   );
 }
 
-// 로그인 컴포넌트
-function SignIn() {
+/**
+ * SignIn 컴포넌트
+ *
+ * @param {Object} props
+ * @param {RegExp} props.regex - 인풋 ID
+ */
+
+function SignIn({ regex }) {
+  const [form, setForm] = useState({
+    email: '',
+    password: '',
+  });
+
+  const onChangeHandler = (e) => {
+    const { name, value } = e.target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+
+    const { password } = form;
+
+    if (!regex.test(password)) {
+      alert('패스워드는 숫자,영문 조합으로 6자리 이상 입력해 주세요');
+      return;
+    }
+
+    alert('로그인이 완료 되었습니다!!');
+  };
   return (
-    <Form>
+    <Form onSubmit={onSubmitHandler}>
       <Input
         id="form-email"
         placeholder="use@comany.io"
         type="email"
         label="이메일"
+        name="email"
+        onChangeHandler={onChangeHandler}
       />
       <Input
         id="form-password"
@@ -202,12 +323,20 @@ function SignIn() {
         type="password"
         label="패스워드"
         isRequired={true}
+        name="password"
+        onChangeHandler={onChangeHandler}
       />
       <Button type="submit" label="로그인" />
     </Form>
   );
 }
 ```
+
+### 분석
+
+- useState Hook을 사용하여 form 객체 상태 관리
+- Input 컴포넌트에 전달할 onChangeHandler 함수 작성
+- Form 컴포넌트에 전달할 onSubmitHandler 함수 작성
 
 ## 2주차 회고
 
