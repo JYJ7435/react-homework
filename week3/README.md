@@ -23,12 +23,8 @@ import { getData, getSearchData } from './service/data-fetch';
 import './App.css';
 
 function App() {
-  // 페이지가 처음 로드될 때 URL에서 검색어를 추출
-  const initialSearch = decodeURIComponent(window.location.pathname.slice(1));
   // 가수에 대한 데이터 정보 상태 관리
   const [data, setData] = useState(null);
-  // 검색어 상태 관리
-  const [search, setSearch] = useState(initialSearch);
   // 현재 URL path 상태
   const [path, setPath] = useState(window.location.pathname);
   // 에러 상태 관리
@@ -39,12 +35,13 @@ function App() {
     // AbortController를 사용하여 컴포넌트가 언마운트 되거나 검색어가 바뀌면
     // 이전 요청을 취소
     const abortController = new AbortController();
+    const currentSearch = decodeURIComponent(path.slice(1));
 
-    // 검색어에 따른 비동기 함수 선택
+    // Path Name에 따른 비동기 함수 선택
     const fetchFn =
-      search === ''
+      path === '/'
         ? () => getData(abortController.signal)
-        : () => getSearchData(search, abortController.signal);
+        : () => getSearchData(currentSearch, abortController.signal);
 
     fetchFn()
       .then((data) => {
@@ -61,7 +58,7 @@ function App() {
     return () => {
       abortController.abort();
     };
-  }, [search]);
+  }, [path]);
 
   // 라우팅 상태
   useEffect(() => {
@@ -92,17 +89,14 @@ function App() {
       <a className="home-link" href="/">
         Home↑
       </a>
-      <Search setSearch={setSearch} search={search} navigate={navigate} />
+      <Search navigate={navigate} />
 
       {error && <p className="error">{error}</p>}
 
       {path === '/' ? (
-        <Card artists={data} search={search} path={path} navigate={navigate} />
+        <Card artists={data} path={path} navigate={navigate} />
       ) : (
-        <ArtistDetail
-          name={decodeURIComponent(path.slice(1))}
-          data={history.state || data}
-        />
+        <ArtistDetail name={decodeURIComponent(path.slice(1))} data={data} />
       )}
     </section>
   );

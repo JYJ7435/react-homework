@@ -6,19 +6,18 @@ import { getData, getSearchData } from './service/data-fetch';
 import './App.css';
 
 function App() {
-  const initialSearch = decodeURIComponent(window.location.pathname.slice(1));
   const [data, setData] = useState(null);
-  const [search, setSearch] = useState(initialSearch);
   const [path, setPath] = useState(window.location.pathname);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const abortController = new AbortController();
+    const currentSearch = decodeURIComponent(path.slice(1));
 
     const fetchFn =
-      search === ''
+      path === '/'
         ? () => getData(abortController.signal)
-        : () => getSearchData(search, abortController.signal);
+        : () => getSearchData(currentSearch, abortController.signal);
 
     fetchFn()
       .then((data) => {
@@ -35,7 +34,7 @@ function App() {
     return () => {
       abortController.abort();
     };
-  }, [search]);
+  }, [path]);
 
   useEffect(() => {
     const handlePopState = () => {
@@ -58,17 +57,14 @@ function App() {
       <a className="home-link" href="/">
         Home↑
       </a>
-      <Search setSearch={setSearch} search={search} navigate={navigate} />
+      <Search navigate={navigate} />
 
       {error && <p className="error">{error}</p>}
 
       {path === '/' ? (
-        <Card artists={data} search={search} path={path} navigate={navigate} />
+        <Card artists={data} path={path} navigate={navigate} />
       ) : (
-        <ArtistDetail
-          name={decodeURIComponent(path.slice(1))}
-          data={history.state || data}
-        />
+        <ArtistDetail name={decodeURIComponent(path.slice(1))} data={data} />
       )}
     </section>
   );

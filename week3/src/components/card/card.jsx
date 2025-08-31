@@ -7,13 +7,12 @@ import './card.css';
  *
  * @param {Object} props
  * @param {Array} props.artists -  Data[]
- * @param {string} [props.search] -  검색어
  * @param {string} [props.path] -  PathName
  * @param {(string, artist: Object) => void} [props.navigate] - 아티스트 클릭 시 실행되는 함수
  * @param {boolean} [props.disabled] - Mouse Event 옵션
  */
 
-function Card({ artists, search, path, navigate, disabled = false }) {
+function Card({ artists, path, navigate, disabled = false }) {
   if (!artists || artists.length === 0) {
     return;
   }
@@ -23,7 +22,7 @@ function Card({ artists, search, path, navigate, disabled = false }) {
   return (
     <ul className="card-container">
       {artists.map((artist) => {
-        const linkTarget = `/${encodeURIComponent(search || artist.name)}`;
+        const linkTarget = `/${encodeURIComponent(artist.name)}`;
         return (
           <li
             className={`card-wrapper ${wrapperClassName}`.trim()}
@@ -34,7 +33,7 @@ function Card({ artists, search, path, navigate, disabled = false }) {
               href={linkTarget}
               onClick={(e) => {
                 e.preventDefault();
-                navigate(linkTarget, [artist]);
+                navigate(linkTarget);
               }}
               tabIndex={path === '/' ? 0 : -1}
             >

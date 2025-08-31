@@ -3,8 +3,8 @@ import Form from '../form/form';
 import Input from '../input/input';
 import React, { useState } from 'react';
 
-function Search({ search, setSearch, navigate }) {
-  const [input, setInput] = useState(search);
+function Search({ navigate }) {
+  const [input, setInput] = useState('');
 
   const onChangeHandler = (e) => {
     const { value } = e.target;
@@ -19,7 +19,6 @@ function Search({ search, setSearch, navigate }) {
       alert('2글자 이상 입력해 주세요..');
       return;
     }
-    setSearch(input);
     navigate(`/${encodeURIComponent(input)}`);
   };
 
