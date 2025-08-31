@@ -1,0 +1,55 @@
+.track-container {
+  inline-size: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 0.625rem;
+  margin-block: 1.875rem;
+  border-radius: var(--radius-md);
+  background-color: var(--color-elevated);
+  color: var(--color-text-primary);
+  padding: 0.625rem;
+}
+
+.track-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  inline-size: 100%;
+}
+
+.track-description {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 0.625rem;
+}
+
+.track-number {
+  display: inline-block;
+  text-align: center;
+  inline-size: 1.5625rem;
+}
+
+.track-album-img {
+  inline-size: 100%;
+  max-inline-size: 46px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.track-artist {
+  display: flex;
+  flex-flow: column nowrap;
+  line-height: 1.2;
+  font-size: var(--font-size-md);
+
+  & span:last-child {
+    color: var(--color-text-muted);
+  }
+}
+
+.track-time {
+  color: var(--color-text-muted);
+}

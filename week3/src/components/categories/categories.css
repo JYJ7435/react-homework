@@ -1,0 +1,35 @@
+.category-wrapper {
+  inline-size: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+  margin-block-start: 1.25rem;
+}
+
+.category-btn {
+  border: 0;
+  font-size: var(--font-size-xl);
+  background-color: var(--color-elevated);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2f3640;
+  }
+
+  &:active {
+    background-color: var(--color-focus);
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-focus);
+  }
+
+  &.active {
+    background-color: #2f3640;
+  }
+}

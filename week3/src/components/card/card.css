@@ -1,0 +1,77 @@
+.card-container {
+  inline-size: 100%;
+  gap: 1.25rem;
+  margin-block: 1.875rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24.0625rem, 1fr));
+}
+
+.card-wrapper {
+  inline-size: 100%;
+  background-color: var(--color-elevated);
+  border-radius: var(--radius-md);
+
+  &:hover {
+    background-color: #2f3640;
+
+    .artist-seemore {
+      color: var(--color-focus);
+    }
+  }
+
+  &.disabled:hover {
+    background-color: var(--color-elevated);
+  }
+
+  &.disabled .card-link {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &:focus-within .card-link {
+    outline: 2px solid var(--color-focus);
+  }
+}
+
+.card-link {
+  display: inline-block;
+  inline-size: 100%;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+.artist-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.artist-img {
+  inline-size: 100%;
+  max-inline-size: 5.75rem;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.artist-seemore {
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  transition: color 0.3s ease;
+}
+
+.artist-description {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-block: 0.9375rem;
+}
+
+.artist-name {
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.artist-type {
+  color: var(--color-text-muted);
+}

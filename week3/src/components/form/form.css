@@ -1,0 +1,18 @@
+.form-group {
+  background-color: transparent;
+  border-radius: var(--radius-full);
+  opacity: 1;
+  position: relative;
+  inline-size: 100%;
+  max-inline-size: 29.6875rem;
+  border: 0;
+  outline: none;
+}
+
+.form-group:hover {
+  outline: none;
+}
+
+.form-group:focus {
+  outline: none;
+}

@@ -1,0 +1,36 @@
+.button {
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  block-size: 100%;
+  aspect-ratio: 1 / 1;
+  transition: outline-color 0.3s ease;
+
+  &:disabled {
+    color: var(--color-text-inverse);
+    background-color: var(--color-neutral-500);
+    pointer-events: none;
+  }
+
+  &:hover {
+    outline: 2px solid var(--color-focus);
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-focus);
+  }
+}
+
+.btn-img {
+  background: url('/src/assets/search.svg') center / cover no-repeat;
+  inline-size: 60%;
+  block-size: 60%;
+}

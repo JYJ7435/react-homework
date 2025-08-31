@@ -1,0 +1,705 @@
+[
+  {
+    "id": "1",
+    "name": "G-DRAGON",
+    "search": "지드래곤,권지용,gdragon,g-dragon,지디",
+    "type": "artist",
+    "img_url": "https://i.scdn.co/image/ab67616100005174783a6a578e8eb992bfd74765",
+    "track": [
+      {
+        "id": "track-1",
+        "name": "HOME SWEET HOME (feat. 태양, 대성)",
+        "artist": "G-DRAGON,태양,대성",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02a6814a2e360b7e76141404f2",
+        "album": "HOME SWEET HOME (feat. 태양, 대성)",
+        "duration_ms": 211330
+      },
+      {
+        "id": "track-2",
+        "name": "PO￦ER",
+        "artist": "G-DRAGON",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02f4a8add3801916ff2d4cf792",
+        "album": "PO￦ER",
+        "duration_ms": 143242
+      },
+      {
+        "id": "track-3",
+        "name": "TOO BAD (feat. Anderson .Paak)",
+        "artist": "G-DRAGON,Anderson .Paak",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020c8549d4dad1c1e95f316736",
+        "album": "Übermensch",
+        "duration_ms": 153664
+      },
+      {
+        "id": "track-4",
+        "name": "무제(無題) (Untitled, 2014)",
+        "artist": "G-DRAGON",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e022d56768bc14df3b0b3982efd",
+        "album": "권지용",
+        "duration_ms": 222867
+      },
+      {
+        "id": "track-5",
+        "name": "차차차 (feat. G-DRAGON)",
+        "artist": "Vince,G-DRAGON",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e022bd185af73a7c4b8f72ee17a",
+        "album": "차차차 (feat. G-DRAGON)",
+        "duration_ms": 175023
+      },
+      {
+        "id": "track-6",
+        "name": "TAKE ME",
+        "artist": "G-DRAGON",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020c8549d4dad1c1e95f316736",
+        "album": "Übermensch",
+        "duration_ms": 219004
+      },
+      {
+        "id": "track-7",
+        "name": "삐딱하게 (Crooked)",
+        "artist": "G-DRAGON",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e023dbdbd0023f1e1c08cd5a6c9",
+        "album": "쿠데타 (COUP D'ETAT)",
+        "duration_ms": 224792
+      },
+      {
+        "id": "track-8",
+        "name": "Heartbreaker",
+        "artist": "G-DRAGON",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e023b4ed6cda8378feb135c9351",
+        "album": "Heartbreaker",
+        "duration_ms": 202546
+      },
+      {
+        "id": "track-9",
+        "name": "소년이여",
+        "artist": "G-DRAGON",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e023b4ed6cda8378feb135c9351",
+        "album": "Heartbreaker",
+        "duration_ms": 209293
+      },
+      {
+        "id": "track-10",
+        "name": "결국 (Feat. 로제 of BLACKPINK)",
+        "artist": "G-DRAGON,ROSE",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e024687bc7a0bda65c282c13afa",
+        "album": "One of a Kind",
+        "duration_ms": 242677
+      }
+    ],
+    "album": [
+      {
+        "id": "album-1",
+        "name": "Übermensch",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020c8549d4dad1c1e95f316736",
+        "release_date": "2025",
+        "artist": "G-DRAGON"
+      },
+      {
+        "id": "album-2",
+        "name": "Heartbreaker",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e023b4ed6cda8378feb135c9351",
+        "release_date": "2009",
+        "artist": "G-DRAGON"
+      },
+      {
+        "id": "album-3",
+        "name": "HOME SWEET HOME (feat. 태양, 대성)",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02a6814a2e360b7e76141404f2",
+        "release_date": "2024",
+        "artist": "G-DRAGON"
+      },
+      {
+        "id": "album-4",
+        "name": "PO￦ER",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02f4a8add3801916ff2d4cf792",
+        "release_date": "2024",
+        "artist": "G-DRAGON"
+      },
+      {
+        "id": "album-5",
+        "name": "권지용",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e022d56768bc14df3b0b3982efd",
+        "release_date": "2017",
+        "artist": "G-DRAGON"
+      },
+      {
+        "id": "album-6",
+        "name": "쿠데타 (COUP D'ETAT)",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e023dbdbd0023f1e1c08cd5a6c9",
+        "release_date": "2013",
+        "artist": "G-DRAGON"
+      },
+      {
+        "id": "album-7",
+        "name": "One of a Kind",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e024687bc7a0bda65c282c13afa",
+        "release_date": "2012",
+        "artist": "G-DRAGON"
+      }
+    ]
+  },
+
+  {
+    "id": "2",
+    "name": "IU",
+    "search": "아이유,iu,이지은",
+    "type": "artist",
+    "img_url": "https://i.scdn.co/image/ab67616100005174789f38042e5ef8911fc3826b",
+    "track": [
+      {
+        "id": "track-11",
+        "name": "Love wins all",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02b79a12d47af18d1d83a5caf9",
+        "album": "Love wins all",
+        "duration_ms": 271080
+      },
+      {
+        "id": "track-12",
+        "name": "Blueming",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02b658276cd9884ef6fae69033",
+        "album": "Love poem",
+        "duration_ms": 217053
+      },
+      {
+        "id": "track-13",
+        "name": "Celebrity",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e022fda07910d40ee81e620fe3f",
+        "album": "Celebrity",
+        "duration_ms": 195546
+      },
+      {
+        "id": "track-14",
+        "name": "에잇(Prod.&Feat. SUGA of BTS)",
+        "artist": "아이유,SUGA",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02c63be04ae902b1da7a54d247",
+        "album": "에잇",
+        "duration_ms": 167573
+      },
+      {
+        "id": "track-15",
+        "name": "Never Ending Story",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e027b95a86cafe26f087f15e7bf",
+        "album": "꽃갈피 셋",
+        "duration_ms": 224026
+      },
+      {
+        "id": "track-16",
+        "name": "너의 의미 (feat. 김창완)",
+        "artist": "아이유,Kim Chang-Wan",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02f8ac90d6852487a82df1b443",
+        "album": "꽃갈피",
+        "duration_ms": 219004
+      },
+      {
+        "id": "track-17",
+        "name": "밤편지",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02582ef1f9cf429f07ee914a89",
+        "album": "밤편지",
+        "duration_ms": 253293
+      },
+      {
+        "id": "track-18",
+        "name": "라일락",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e024ed058b71650a6ca2c04adff",
+        "album": "IU 5th Album 'LILAC'",
+        "duration_ms": 214253
+      },
+      {
+        "id": "track-19",
+        "name": "드라마",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020d378c4756c4fc34b7d3eeaf",
+        "album": "조각집",
+        "duration_ms": 128106
+      },
+      {
+        "id": "track-20",
+        "name": "스물셋",
+        "artist": "아이유",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e026a0cfc4171d2a0cb9dc7c9ab",
+        "album": "CHAT-SHIRE",
+        "duration_ms": 194325
+      }
+    ],
+    "album": [
+      {
+        "id": "album-10",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02b79a12d47af18d1d83a5caf9",
+        "name": "Love wins all",
+        "release_date": "2024",
+        "artist": "아이유"
+      },
+      {
+        "id": "album-11",
+        "name": "에잇",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02c63be04ae902b1da7a54d247",
+        "release_date": "2020",
+        "artist": "아이유"
+      },
+      {
+        "id": "album-12",
+        "name": "Love poem",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02b658276cd9884ef6fae69033",
+        "release_date": "2019",
+        "artist": "아이유"
+      },
+      {
+        "id": "album-13",
+        "name": "Celebrity",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e022fda07910d40ee81e620fe3f",
+        "release_date": "2021",
+        "artist": "아이유"
+      },
+      {
+        "id": "album-14",
+        "name": "꽃갈피 셋",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e027b95a86cafe26f087f15e7bf",
+        "release_date": "2025",
+        "artist": "아이유"
+      },
+      {
+        "id": "album-15",
+        "name": "꽃갈피",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02f8ac90d6852487a82df1b443",
+        "release_date": "2014",
+        "artist": "아이유"
+      },
+      {
+        "id": "album-16",
+        "name": "밤편지",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02582ef1f9cf429f07ee914a89",
+        "release_date": "2017",
+        "artist": "아이유"
+      },
+      {
+        "id": "album-17",
+        "name": "CHAT-SHIRE",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e026a0cfc4171d2a0cb9dc7c9ab",
+        "release_date": "2015",
+        "artist": "아이유"
+      }
+    ]
+  },
+
+  {
+    "id": "3",
+    "name": "Aespa",
+    "search": "에스파,aespa,애스파",
+    "type": "artist",
+    "img_url": "https://i.scdn.co/image/ab67616100005174927f1260251e32135287e032",
+    "track": [
+      {
+        "id": "track-30",
+        "name": "Dirty Work",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02bf35cc79c5b22b1c19065272",
+        "album": "Dirty Work",
+        "duration_ms": 180250
+      },
+      {
+        "id": "track-31",
+        "name": "Whiplash",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02e467a8e8d7b0aa92d354aa75",
+        "album": "Whiplash - The 5th Mini Album",
+        "duration_ms": 183226
+      },
+      {
+        "id": "track-32",
+        "name": "Supernova",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02115d1e2cfde4e387f0a13ce2",
+        "album": "Supernova",
+        "duration_ms": 178880
+      },
+      {
+        "id": "track-33",
+        "name": "Hold On Tight",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02fe31201bbc019b1636066dc3",
+        "album": "Hold On Tight",
+        "duration_ms": 149718
+      },
+      {
+        "id": "track-34",
+        "name": "Drama",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02c54e39f2ae0dd10731f93c08",
+        "album": "Drama - The 4th Mini Album",
+        "duration_ms": 214973
+      },
+      {
+        "id": "track-35",
+        "name": "Armageddon",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020fc598038040859794c600e2",
+        "album": "Armageddon - The 1st Album",
+        "duration_ms": 196466
+      },
+      {
+        "id": "track-36",
+        "name": "Spicy",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0204878afb19613a94d37b29ce",
+        "album": "MY WORLD - The 3rd Mini Album",
+        "duration_ms": 197040
+      },
+      {
+        "id": "track-37",
+        "name": "Live My Life",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020fc598038040859794c600e2",
+        "album": "Armageddon - The 1st Album",
+        "duration_ms": 159133
+      },
+      {
+        "id": "track-38",
+        "name": "도깨비불 (Illusion)",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0266c78ec4b271cc582fef3618",
+        "album": "도깨비불 (Illusion)",
+        "duration_ms": 195053
+      },
+      {
+        "id": "track-39",
+        "name": "Next Level",
+        "artist": "Aespa",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e027a393b04e8ced571618223e8",
+        "album": "Next Level",
+        "duration_ms": 221573
+      }
+    ],
+    "album": [
+      {
+        "id": "album-30",
+        "name": "Dirty Work",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02bf35cc79c5b22b1c19065272",
+        "release_date": "2025",
+        "artist": "Aespa"
+      },
+      {
+        "id": "album-31",
+        "name": "Whiplash - The 5th Mini Album",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02e467a8e8d7b0aa92d354aa75",
+        "release_date": "2024",
+        "artist": "Aespa"
+      },
+      {
+        "id": "album-32",
+        "name": "Supernova",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02115d1e2cfde4e387f0a13ce2",
+        "release_date": "2024",
+        "artist": "Aespa"
+      },
+      {
+        "id": "album-33",
+        "name": "Drama - The 4th Mini Album",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02c54e39f2ae0dd10731f93c08",
+        "release_date": "2023",
+        "artist": "Aespa"
+      },
+      {
+        "id": "album-34",
+        "name": "Armageddon - The 1st Album",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020fc598038040859794c600e2",
+        "release_date": "2024",
+        "artist": "Aespa"
+      },
+      {
+        "id": "album-35",
+        "name": "MY WORLD - The 3rd Mini Album",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0204878afb19613a94d37b29ce",
+        "release_date": "2023",
+        "artist": "Aespa"
+      },
+      {
+        "id": "album-36",
+        "name": "도깨비불 (Illusion)",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0266c78ec4b271cc582fef3618",
+        "release_date": "2022",
+        "artist": "Aespa"
+      },
+      {
+        "id": "album-37",
+        "name": "Next Level",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e027a393b04e8ced571618223e8",
+        "release_date": "2021",
+        "artist": "Aespa"
+      }
+    ]
+  },
+
+  {
+    "id": "4",
+    "name": "NewJeans",
+    "search": "newjeans,뉴진스",
+    "type": "artist",
+    "img_url": "https://i.scdn.co/image/ab6761610000517480668ba2b15094d083780ea9",
+    "track": [
+      {
+        "id": "track-40",
+        "name": "New Jeans",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e023d98a0ae7c78a3a9babaf8af",
+        "album": "NewJeans 'Super Shy",
+        "duration_ms": 108986
+      },
+      {
+        "id": "track-41",
+        "name": "OMG",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02d70036292d54f29e8b68ec01",
+        "album": "NewJeans 'OMG'",
+        "duration_ms": 212253
+      },
+      {
+        "id": "track-42",
+        "name": "ETA",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020744690248ef3ba7b776ea7b",
+        "album": "NewJeans 2nd EP 'Get Up'",
+        "duration_ms": 151373
+      },
+      {
+        "id": "track-43",
+        "name": "Ditto",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02edf5b257be1d6593e81bb45f",
+        "album": "Ditto",
+        "duration_ms": 185506
+      },
+      {
+        "id": "track-44",
+        "name": "Hype Boy",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e029d28fd01859073a3ae6ea209",
+        "album": "NewJeans 1st EP 'New Jeans'",
+        "duration_ms": 179026
+      },
+      {
+        "id": "track-45",
+        "name": "Supernatural",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e027e1eeb0d7cc374a168369c80",
+        "album": "Supernatural",
+        "duration_ms": 191000
+      },
+      {
+        "id": "track-46",
+        "name": "Attention",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e029d28fd01859073a3ae6ea209",
+        "album": "NewJeans 1st EP 'New Jeans'",
+        "duration_ms": 180066
+      },
+      {
+        "id": "track-47",
+        "name": "How Sweet",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02b657fbb27b17e7bd4691c2b2",
+        "album": "How Sweet",
+        "duration_ms": 219026
+      },
+      {
+        "id": "track-48",
+        "name": "Cookie",
+        "artist": "NewJeans",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e029d28fd01859073a3ae6ea209",
+        "album": "NewJeans 1st EP 'New Jeans'",
+        "duration_ms": 235562
+      }
+    ],
+    "album": [
+      {
+        "id": "album-40",
+        "name": "NewJeans 'OMG'",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02d70036292d54f29e8b68ec01",
+        "release_date": "2023",
+        "artist": "NewJeans"
+      },
+      {
+        "id": "album-41",
+        "name": "NewJeans 'Super Shy",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e023d98a0ae7c78a3a9babaf8af",
+        "release_date": "2023",
+        "artist": "NewJeans"
+      },
+      {
+        "id": "album-42",
+        "name": "NewJeans 2nd EP 'Get Up'",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e020744690248ef3ba7b776ea7b",
+        "release_date": "2023",
+        "artist": "NewJeans"
+      },
+      {
+        "id": "album-43",
+        "name": "Ditto",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02edf5b257be1d6593e81bb45f",
+        "release_date": "2022",
+        "artist": "NewJeans"
+      },
+      {
+        "id": "album-44",
+        "name": "NewJeans 1st EP 'New Jeans'",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e029d28fd01859073a3ae6ea209",
+        "release_date": "2022",
+        "artist": "NewJeans"
+      },
+      {
+        "id": "album-45",
+        "name": "Supernatural",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e027e1eeb0d7cc374a168369c80",
+        "release_date": "2023",
+        "artist": "NewJeans"
+      }
+    ]
+  },
+
+  {
+    "id": "5",
+    "name": "DAY6",
+    "search": "day6,데이식스",
+    "type": "artist",
+    "img_url": "https://i.scdn.co/image/ab676161000051746bf26f017d7397f06df7b254",
+    "track": [
+      {
+        "id": "track-50",
+        "name": "한 페이지가 될 수 있게",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0280c0a2d0bf89e3707b6365c4",
+        "album": "The Book of Us : Gravity",
+        "duration_ms": 205575
+      },
+      {
+        "id": "track-51",
+        "name": "Congratulations",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e029989437bcd5115edde791ac8",
+        "album": "The Day",
+        "duration_ms": 229293
+      },
+      {
+        "id": "track-52",
+        "name": "HAPPY",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e021e20be5a6bdfd2780516320a",
+        "album": "Fourever",
+        "duration_ms": 189934
+      },
+      {
+        "id": "track-53",
+        "name": "예뻤어",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02b6d756ed33cd43ec46ffe6db",
+        "album": "Every DAY6 February",
+        "duration_ms": 283160
+      },
+      {
+        "id": "track-54",
+        "name": "Welcome to the Show",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e021e20be5a6bdfd2780516320a",
+        "album": "Fourever",
+        "duration_ms": 217067
+      },
+      {
+        "id": "track-55",
+        "name": "Love me or Leave me",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e026b2b448f14b021b049cdceb1",
+        "album": "The Book of Us : The Demon",
+        "duration_ms": 222765
+      },
+      {
+        "id": "track-56",
+        "name": "Sweet Chaos",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02e3f3b11777ef77dcf72d9cd2",
+        "album": "The Book of Us : Entropy",
+        "duration_ms": 227240
+      },
+      {
+        "id": "track-57",
+        "name": "Shoot Me",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02c25c274f725ed888fd2fa15d",
+        "album": "Shoot Me : Youth Part 1",
+        "duration_ms": 175836
+      },
+      {
+        "id": "track-58",
+        "name": "녹아내려요 Melt Down",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0242e0fe9e101c705fe7edf5a2",
+        "album": "Band Aid",
+        "duration_ms": 165587
+      },
+      {
+        "id": "track-59",
+        "name": "행복했던 날들이었다",
+        "artist": "DAY6",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02d5e048fc53c0a6097fdcd75d",
+        "album": "Remember Us : Youth Part 2",
+        "duration_ms": 205149
+      }
+    ],
+    "album": [
+      {
+        "id": "album-50",
+        "name": "The Book of Us : Gravity",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0280c0a2d0bf89e3707b6365c4",
+        "release_date": "2019",
+        "artist": "DAY6"
+      },
+      {
+        "id": "album-51",
+        "name": "The Day",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e029989437bcd5115edde791ac8",
+        "release_date": "2015",
+        "artist": "DAY6"
+      },
+      {
+        "id": "album-52",
+        "name": "Fourever",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e021e20be5a6bdfd2780516320a",
+        "release_date": "2024",
+        "artist": "DAY6"
+      },
+      {
+        "id": "album-53",
+        "name": "The Book of Us : The Demon",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e026b2b448f14b021b049cdceb1",
+        "release_date": "2020",
+        "artist": "DAY6"
+      },
+      {
+        "id": "album-54",
+        "name": "The Book of Us : Entropy",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02e3f3b11777ef77dcf72d9cd2",
+        "release_date": "2019",
+        "artist": "DAY6"
+      },
+      {
+        "id": "album-55",
+        "name": "Shoot Me : Youth Part 1",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e02c25c274f725ed888fd2fa15d",
+        "release_date": "2018",
+        "artist": "DAY6"
+      },
+      {
+        "id": "album-56",
+        "name": "Band Aid",
+        "img_url": "https://i.scdn.co/image/ab67616d00001e0242e0fe9e101c705fe7edf5a2",
+        "release_date": "2024",
+        "artist": "DAY6"
+      }
+    ]
+  }
+]
