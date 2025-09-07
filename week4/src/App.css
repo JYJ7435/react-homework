@@ -1,0 +1,68 @@
+body {
+  background-color: var(--color-surface);
+}
+
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+
+  h1 {
+    color: var(--color-text-primary);
+    font-size: var(--font-size-3xl);
+  }
+}
+
+.form-group {
+  margin-block: 1.25rem;
+  inline-size: 100%;
+  max-width: 43.75rem;
+  display: flex;
+  flex-flow: column nowrap;
+
+  & button {
+    align-self: flex-end;
+  }
+}
+
+.textarea-bio {
+  font-size: var(--font-size-md);
+  line-height: 1.2;
+  padding: var(--space-s) var(--space-ms);
+  border-radius: var(--radius-md);
+  border: 0.0625rem solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  outline: none;
+  transition: border-color 0.3s ease;
+  inline-size: 100%;
+  resize: none;
+}
+
+.textarea-bio:hover {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 0.125rem rgba(249, 0, 77, 0.4);
+}
+
+.textarea-bio:focus {
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 0.125rem rgba(249, 0, 77, 0.7);
+}
+
+.textarea-bio:read-only:hover,
+.textarea-bio:read-only:focus {
+  border-color: var(--color-border);
+  box-shadow: none;
+  cursor: default;
+}
+
+.textarea-bio-label {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-top: 0.9375rem;
+  margin-bottom: 0.25rem;
+  padding-inline: var(--space-s);
+}

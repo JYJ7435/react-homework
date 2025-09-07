@@ -1,0 +1,7 @@
+.not-found-page {
+  color: var(--color-text-primary);
+  inline-size: 100%;
+  text-align: center;
+  margin-block: 3.125rem;
+  font-size: var(--font-size-2xl);
+}
